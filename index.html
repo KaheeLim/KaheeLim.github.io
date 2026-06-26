@@ -1,32 +1,24 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kahee Lim</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: 50px auto;
-      padding: 0 20px;
-      line-height: 1.6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      max-width: 900px;
+      margin: 45px auto;
+      padding: 0 24px;
+      line-height: 1.65;
       color: #222;
-    }
-
-    h1 {
-      font-size: 2.2em;
-      margin-bottom: 0;
-    }
-
-    h2 {
-      margin-top: 40px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
+      background-color: #fff;
     }
 
     a {
-      color: #0066cc;
+      color: #2a5db0;
       text-decoration: none;
     }
 
@@ -34,111 +26,266 @@
       text-decoration: underline;
     }
 
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      margin-bottom: 35px;
+    }
+
+    .intro {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      margin: 0 0 8px 0;
+      font-weight: 700;
+    }
+
     .subtitle {
-      font-size: 1.1em;
+      font-size: 1.08em;
       color: #555;
-      margin-top: 5px;
+      margin: 0 0 14px 0;
     }
 
     .links {
-      margin-top: 15px;
+      font-size: 0.98em;
+      margin-top: 10px;
     }
 
     .links a {
-      margin-right: 15px;
+      margin-right: 14px;
+      white-space: nowrap;
+    }
+
+    .profile-img {
+      width: 155px;
+      height: 155px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+    }
+
+    h2 {
+      font-size: 1.35em;
+      margin-top: 38px;
+      margin-bottom: 14px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .news-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .news-list li {
+      margin-bottom: 7px;
+    }
+
+    .date {
+      font-weight: 600;
+      color: #444;
+      display: inline-block;
+      width: 92px;
+    }
+
+    .education-item {
+      margin-bottom: 17px;
+    }
+
+    .institution {
+      font-weight: 700;
+    }
+
+    .degree {
+      color: #333;
+    }
+
+    .period {
+      color: #666;
+      font-size: 0.95em;
     }
 
     .publication {
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
 
     .pub-title {
-      font-weight: bold;
+      font-weight: 700;
+      margin-bottom: 4px;
     }
 
-    .note {
-      color: #666;
+    .authors {
+      margin-bottom: 2px;
+    }
+
+    .me {
+      font-weight: 700;
+    }
+
+    .venue {
+      font-style: italic;
+      color: #444;
+      margin-bottom: 2px;
+    }
+
+    .pub-links {
+      font-size: 0.95em;
+    }
+
+    .research-interests {
+      columns: 2;
+      max-width: 650px;
+    }
+
+    footer {
+      margin-top: 55px;
+      padding-top: 18px;
+      border-top: 1px solid #eee;
+      color: #777;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        margin-top: 28px;
+      }
+
+      .header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .profile-img {
+        width: 130px;
+        height: 130px;
+      }
+
+      .research-interests {
+        columns: 1;
+      }
+
+      .date {
+        display: block;
+        width: auto;
+        margin-bottom: 2px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <h1>Kahee Lim</h1>
 
-  <p class="subtitle">
-    Ph.D. Candidate at KAIST<br>
-    Responsible AI · Trustworthy LLMs
-  </p>
+  <div class="header">
+    <div class="intro">
+      <h1>Kahee Lim</h1>
 
-  <p class="links">
-    <a href="mailto:limgh55@kaist.ac.kr">Email</a>
-    <a href="https://github.com/KaheeLim">GitHub</a>
-    <a href="#">Google Scholar</a>
-    <a href="#">CV</a>
-  </p>
+      <p class="subtitle">
+        Ph.D. Candidate at KAIST<br>
+        Responsible AI · Trustworthy LLMs
+      </p>
+
+      <p class="links">
+        <a href="mailto:limgh55@kaist.ac.kr">Email</a>
+        <a href="https://github.com/KaheeLim">GitHub</a>
+        <a href="#">Google Scholar</a>
+        <a href="#">CV</a>
+      </p>
+    </div>
+
+    <!-- 
+      To use a profile photo:
+      1. Upload your photo to the repository.
+      2. Rename it as profile.jpg.
+      3. Keep the line below as is.
+    -->
+    <img src="profile.jpg" alt="Kahee Lim" class="profile-img">
+  </div>
 
   <h2>About</h2>
 
   <p>
-    I am a Ph.D. candidate in the School of Electrical Engineering at KAIST, advised by Prof. Steven Euijong Whang.
-    My research focuses on responsible AI and trustworthy large language models, with an emphasis on
-    fairness, hidden bias, response consistency, and sycophancy in personalized LLMs.
+    I am a Ph.D. candidate in the School of Electrical Engineering at KAIST, advised by
+    Prof. Steven Euijong Whang. My research focuses on responsible AI and trustworthy
+    large language models, with an emphasis on fairness, hidden bias, response consistency,
+    and sycophancy in personalized LLMs.
   </p>
 
   <p>
-    I am interested in understanding when and why large language models behave unfairly or unreliably
-    in real-world user interactions. My recent work studies hidden bias caused by prompt framing and
-    sycophantic behavior in personalized LLM settings.
+    I am interested in understanding when and why large language models behave unfairly
+    or unreliably in real-world user interactions. My recent work studies hidden bias
+    caused by prompt framing and sycophantic behavior in personalized LLM settings.
   </p>
 
   <h2>News</h2>
 
-  <ul>
-    <li><strong>Jun. 2026:</strong> Our paper was accepted to Findings of ACL 2026.</li>
-    <li><strong>Mar. 2025:</strong> Started my Ph.D. at KAIST.</li>
+  <ul class="news-list">
+    <li><span class="date">Jun. 2026</span> Our paper was accepted to Findings of ACL 2026.</li>
+    <li><span class="date">Feb. 2025</span> Started my Ph.D. at KAIST.</li>
   </ul>
 
   <h2>Education</h2>
 
-  <p>
-    <strong>KAIST</strong><br>
-    Ph.D., Electrical Engineering<br>
-    Feb. 2025 - Present
-  </p>
+  <div class="education-item">
+    <div class="institution">KAIST</div>
+    <div class="degree">Ph.D. in Electrical Engineering</div>
+    <div class="period">Feb. 2025 - Present</div>
+  </div>
 
-  <p>
-    <strong>KAIST</strong><br>
-    M.S., Electrical Engineering <br>
-    Feb. 2023 - Feb. 2025
-  </p>
+  <div class="education-item">
+    <div class="institution">KAIST</div>
+    <div class="degree">M.S. in Electrical Engineering</div>
+    <div class="period">Feb. 2023 - Feb. 2025</div>
+  </div>
 
-  <p>
-    <strong>KAIST</strong><br>
-    B.S., Electrical Engineering <br>
-    Feb. 2018 - Feb. 2023
-  </p>
-  
+  <div class="education-item">
+    <div class="institution">KAIST</div>
+    <div class="degree">B.S. in Electrical Engineering</div>
+    <div class="period">Feb. 2018 - Feb. 2023</div>
+  </div>
+
   <h2>Publications</h2>
 
   <div class="publication">
-    <p class="pub-title">
+    <div class="pub-title">
       DeFrame: Framing-aware Debiasing for LLM Fairness
-    </p>
-    <p>
-      Kahee Lim, Soyeon Kim, Steven Euijong Whang
-      <br>
-      <em>Findings of ACL 2026</em>
-      <br>
+    </div>
+    <div class="authors">
+      <span class="me">Kahee Lim</span>, Soyeon Kim, Steven Euijong Whang
+    </div>
+    <div class="venue">
+      Findings of ACL 2026
+    </div>
+    <div class="pub-links">
       <a href="https://arxiv.org/abs/2602.04306">Paper</a> /
       <a href="https://github.com/KaheeLim/DeFrame">Code</a> /
       <a href="#">Poster</a>
-    </p>
+    </div>
   </div>
 
   <h2>Research Interests</h2>
 
-  <ul>
+  <ul class="research-interests">
     <li>Responsible AI</li>
+    <li>Trustworthy LLMs</li>
     <li>LLM Fairness</li>
     <li>Hidden Bias in LLMs</li>
     <li>Framing Effects</li>
@@ -147,6 +294,10 @@
     <li>LLM Debiasing</li>
   </ul>
 
+  <footer>
+    Last updated: 2026
+  </footer>
 
 </body>
 </html>
+```
